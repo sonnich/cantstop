@@ -1,17 +1,20 @@
 
 #include <stdio.h>
-char abbre[16] = {'0', '1', '2', '3', '4', '5', '6','7','8','9', 't', 'e', 'o',' ','*', 'x'};
+char *abbre[16] = {"0", "1", "2", "3", "4", "5", "6","7","8","9", "10", "11", "12", " ","*", "x"};
 void printBoard(int board[11][14]);
 
 
 void printBoard(int board[11][14])
 {
-        //printf("i board");
+         printf(" %s   %s   %s   %s   %s   %s   %s   %s  %s  %s  %s\n", abbre[board[0][0]], abbre[board[1][0]], abbre[board[2][0]], 
+                abbre[board[3][0]], abbre[board[4][0]], abbre[board[5][0]], abbre[board[6][0]], abbre[board[7][0]], abbre[board[8][0]],
+                abbre[board[9][0]], abbre[board[10][0]]);
    
-    for (int i = 0; i < 14; i++)
+    for (int i = 1; i < 14; i++)
     {
-            
-        printf(" %c  %c  %c  %c  %c  %c  %c  %c  %c  %c  %c\n", abbre[board[0][i]], abbre[board[1][i]], abbre[board[2][i]], 
+
+         
+        printf(" %s   %s   %s   %s   %s   %s   %s   %s   %s   %s   %s\n", abbre[board[0][i]], abbre[board[1][i]], abbre[board[2][i]], 
                 abbre[board[3][i]], abbre[board[4][i]], abbre[board[5][i]], abbre[board[6][i]], abbre[board[7][i]], abbre[board[8][i]],
                 abbre[board[9][i]], abbre[board[10][i]]);
               
